@@ -1,68 +1,75 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 
 
 body{
-    background-color: white;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Xanh Mono', monospace;
-}
-
-.container{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: center;
+    font-family: 'Xanh Mono',monospace;
+    
 }
 
 header{
-    font-weight: bold;
-    /* align-self: center; */
-    font-size: 1rem;
     padding: 1rem;
+    font-weight: bold;
 }
-h1{
-    text-align: center;
-    font-size: 3rem;
+
+.container{
+    display: flex;
+ 
 }
 
 
-#hero-image{
-   display: block; 
-   max-width: 40%;
-   max-height: 40%;
+.container > h1{
+    font-weight: bolder;
+    font-size-adjust: 1.0;
+    
+}
+
+.container > p{overflow: hidden;
+}
+
+
+.container > img{
+    width: 40%;
+    height: 50%;
+    padding: 1rem;
+    margin: 50px;
    float: left;
-   padding: 1rem;
-}
-
-.paragraph{
-    /* display: inline-block; */
-    font-size: 2.5em;
-    /* font-size: medium; */
-    text-align: center;
-    margin: 0 auto;
-    padding: 5rem;
+   object-fit: contain;
+   margin-left: 2rem;
+   animation: example 2s infinite;
+  animation-direction: alternate;
   
+   
 }
 
-.home-page-button{
+
+#home-button{
     background-color: black;
     color: whitesmoke;
-    /* align-self: center; */
     padding: 1rem;
+    
 }
 
-
-.clearfix{
-    align-content: flex-start;
-    overflow: auto;
+.fix-right{
+    align-items: center;
+    float: right;
+    margin: 70px;
+    padding: 1rem;
+    
 }
-
 
 footer{
     text-align: center;
     position: relative;
     bottom: -80px;
 }
+
+@keyframes example {
+    0% {
+        transform: skewY(15deg);
+      }
+      100% {
+        transform: skewY(-15deg);
+      }
+    
+  }
